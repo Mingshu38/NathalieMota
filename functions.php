@@ -4,6 +4,7 @@
 function nathalie_mota_theme_enqueue(){
     wp_enqueue_style('nathalie-mota', get_stylesheet_uri());
     wp_enqueue_style('theme-style', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_script('index', get_template_directory_uri() . '/assets/js/index.js', [], null, true);
 }
 add_action('wp_enqueue_scripts','nathalie_mota_theme_enqueue');
 // Gestion du menu 
